@@ -1,6 +1,6 @@
 package software.ulpgc.kata6.io;
 
-import software.ulpgc.kata5.model.Title;
+import software.ulpgc.kata6.model.Title;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

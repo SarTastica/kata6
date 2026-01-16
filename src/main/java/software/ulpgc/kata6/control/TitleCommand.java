@@ -22,8 +22,8 @@ public class TitleCommand {
             Histogram<String> histogram = control.build(titles, Title::getTitleType);
 
             Map<String, Integer> result = new HashMap<>();
-            for(String key : histogram.bins()){
-                result.put(key, histogram.value(key));
+            for(String key : histogram.keys()){
+                result.put(key, histogram.get(key));
             }
             return result;
         } catch (SQLException e){
