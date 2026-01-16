@@ -20,7 +20,7 @@ public class Main {
         Spark.port(8080);
 
         Spark.get("/histogram", ((request, response) -> {
-            response.type("application/json");
+            response.type("aplication/json");
             var data = new TitleCommand().execute();
             return new Gson().toJson(data);
         }));
